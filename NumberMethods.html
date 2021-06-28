@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var s="30";
+        var num= Number(s);
+        document.write("String to Number:"+(num+30)+"<br>");
+        var s="30 30";
+        var num= Number(s);
+        document.write("String to Number:"+(num+30)+"<br>");
+        var s="30.20";
+        var num= Number.parseInt(s);
+        document.write("String to parseInt:"+num+"<br>");
+        var s="30.20";
+        var num= Number.parseFloat(s);
+        document.write("String to parseFloat:"+num+"<br>");
+        var s="30.20";
+        var num= Number.isFinite(s);
+        document.write("String to isfinite:"+num+"<br>");
+        var s=30.20;
+        var num= Number.isFinite(s);
+        document.write("String to isfinite:"+num+"<br>");
+        var s="30.20";
+        var num= Number.isInteger(s);
+        document.write("String to isInteger:"+num+"<br>");
+        var s=30.20;
+        var num= Number.isInteger(s);
+        document.write("String to isInteger:"+num+"<br>");
+        var s=30;
+        var num= Number.isInteger(s);
+        document.write("String to isInteger:"+num+"<br>");
+        var s=30.759945;
+        var num= s.toFixed(2);
+        document.write("String to toFixed:"+num+"<br>");
+        var s=30.759945;
+        var num= s.toPrecision(2);
+        document.write("String to toPrecision:"+num+"<br>");
+       
+    </script>
+</body>
+</html>

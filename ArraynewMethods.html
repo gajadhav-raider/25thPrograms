@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+  var a=["Gaurav","Rani","Maina","Ravi"];
+        document.write(a+"<br>");
+        var b=a.some(find);//some function check atleast one time condition true
+        function find(fn)
+        {
+            return fn=="Rani";
+        } 
+        document.write(b+"<br>");  
+        var c=[10,39,91,20];
+        document.write(c+"<br>");
+        var d=c.every(all);//Check every element condition is true then out put is true
+        function all(al)
+        {
+            return al>=10;
+        }
+        document.write(d+"<br>");
+        var e= c.find(checkAudult);//Find Return element that satisfy condition
+        function checkAudult(age)
+        {
+            return age>=18;
+        }
+        document.write(e+"<br>");
+        var e= c.findIndex(checkAudult);//findIndex Return index of the element that satisfy that condition
+        function checkAudult(age)
+        {
+            return age>=18;
+        }
+        document.write(e+"<br>");
+        var e= c.filter(checkAudult);//Return new Array that satisfy that condition.
+          function checkAudult(age)
+        {
+            return age>=18;
+        }
+        document.write(e+"<br>");
+        
+    </script>
+</body>
+</html>

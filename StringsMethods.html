@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var str="My name is Gaurav Jadhav i loves Maina is";
+       var len=str.length;
+       document.write("Length of String is:"+len+"<br>");
+       var upper=str.toUpperCase();
+       document.write(upper+"<br>");
+       var lower=str.toLocaleLowerCase();
+       document.write(lower+"<br>");
+       var include=str.includes("is");
+       document.write(include+"<br>");
+       var start=str.startsWith("My");
+       document.write(start+'<br>');
+       var end=str.endsWith("rani");
+       document.write(end+"<br>");
+       var search=str.search("is");
+       document.write(search+"<br>");
+       var match=str.match(/is/g);
+       document.write(match+"<br>");
+       var indexof=str.indexOf("is");
+       document.write(indexof+"<br>");
+       var lastindex = str.lastIndexOf("is");
+       document.write(lastindex+"<br>");
+       var lastindex = str.replace("is","are");
+       document.write("Replace:"+lastindex+"<br>");
+       var lastindex = str.replace(/is/g,"are");
+       document.write("Replace:"+lastindex+"<br>");
+       var str1="               My name is Gaurav Jadhav i loves Maina is          ";
+     
+       var lastindex = str.replace(/is/g,"are");
+       alert("Trim:"+lastindex);
+       
+    </script>
+</body>
+</html>

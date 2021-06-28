@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var a=["Gaurav","Rani","Maina","Ravi"];
+        document.write(a+"<br>");
+        a.shift();
+        document.write(a+"<br>");
+        a.unshift("Ramesh");
+        document.write(a+"<br>");
+        var b=a.concat("Sham","Sham");
+        document.write(b+"<br>");
+        var j=b.join("-");
+        document.write(j+"<br>");
+        var s= b.slice(1,3);
+        document.write(s+"<br>");
+        b.splice(1,0,"Raj","Raja")
+        document.write(b+"<br>");
+        var k= Array.isArray(a);
+        document.write(k+"<br>");
+        var r=b.indexOf("Sham");
+        document.write(r+"<br>");
+        var l=b.lastIndexOf("Sham");
+        document.write(l+"<br>");
+        var c=b.includes("Raja");
+        document.write(c+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var obj={
+            fname:"Gaurav",
+            lname:"Jadhav",
+            age:18,
+            email:"gajadhav@crosscontry.com",
+            r:["ram","Ravi","Raj","Vishal"],
+            salary: function()
+            {
+                return 25000;
+            },
+            fullname:function()
+            {
+             return this.fname+" "+this.lname;
+            },
+            s:{
+                'city':"Alandi",
+                'state':"Maharashtra"
+            }
+        }
+        document.write(obj.fname+"<br>");
+        document.write(obj.age+"<br>");
+        document.write(obj.r+"<br>");
+        document.write(obj.r[1]+"<br>");
+        document.write(obj.salary()+"<br>");
+        document.write(obj.fullname()+"<br>")
+        document.write(obj.s.city+"<br>")
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var ary=[10,20,30,40];
+        var b= ary.map(multi);
+        function multi(element)
+        {
+            return element*10;
+        }
+        document.write(b+"<br>");
+       var aryobj=[
+           {fname:"Gaurav",lname:"Jadhav"},
+           {fname:"Vishal",lname:"Humbad"},
+           {fname:"Rani",lname:"Erande"}
+       ];
+       var c= aryobj.map(concate);
+       function concate(val)
+       {
+           return val.fname+" "+val.lname+"<br>";
+       }
+       document.write(c);
+    </script>
+</body>
+</html>
